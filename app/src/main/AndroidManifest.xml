@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alopez.quotie2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="io.branch.referral.BranchApp">
+        <activity android:name=".MainActivity">
+        </activity>
+
+        <activity android:name=".BlankActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="quotie2android" android:host="open" />
+                 <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="9wlb.app.link" />
+                <data android:scheme="https" android:host="9wlb-alternate.app.link" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_gaAt9hAcUESdCRaXYt1Nsfdiyrn5MfYy" />
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_aiDq2hAeOtKntHp26FW32opnArlWVm8V" />
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+
+        <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quotie2</string>
+    <string name="quote">Quote</string>
+    <string name="refresh">Refresh</string>
+    <string name="column_2">Column 2</string>
+    <string name="share">Share</string>
+    <string name="refresh_rewards">Refresh rewards</string>
+</resources>

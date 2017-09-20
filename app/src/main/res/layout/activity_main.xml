@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alopez.quotie2.MainActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- 2 columns -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/quote"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="0.04"
+                android:gravity="center"
+                android:text="@string/quote" />
+            />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dip" >
+            <Button
+                android:id="@+id/refresh_quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refresh"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dip" >
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp" />
+            />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:ems="10"
+                android:hint="User Id"
+                android:inputType="textPersonName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_editor_absoluteY="127dp" />
+
+            <Button
+                android:id="@+id/setuseridbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set User ID"
+                tools:layout_editor_absoluteX="254dp"
+                tools:layout_editor_absoluteY="127dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/rewards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.04"
+                android:gravity="center" />
+            />
+
+            <Button
+                android:id="@+id/refreshrewards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refresh_rewards"
+                tools:layout_editor_absoluteX="254dp"
+                tools:layout_editor_absoluteY="127dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dip" >
+            <Button
+                android:id="@+id/customeventbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="custom event"
+                tools:layout_editor_absoluteX="254dp"
+                tools:layout_editor_absoluteY="127dp" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="branchLink" />
+
+
+    <!--<TableLayout-->
+    <!--android:layout_width="385dp"-->
+    <!--android:layout_height="575dp"-->
+    <!--android:layout_marginBottom="26dp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--android:weightSum="1">-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/quote"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Quote"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_weight="0.04" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/refresh_quote"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Refresh"-->
+    <!--tools:layout_editor_absoluteY="0dp"-->
+    <!--tools:layout_editor_absoluteX="0dp" />-->
+    <!--/>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--tools:layout_editor_absoluteY="8dp"-->
+    <!--tools:layout_editor_absoluteX="8dp" />-->
+
+
+    <!--<TableRow-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--tools:layout_editor_absoluteY="8dp"-->
+    <!--tools:layout_editor_absoluteX="8dp" />-->
+
+    <!--/>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--tools:layout_editor_absoluteY="8dp"-->
+    <!--tools:layout_editor_absoluteX="8dp" />-->
+    <!--<EditText-->
+    <!--android:id="@+id/editText2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:text="User ID"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--tools:layout_editor_absoluteY="186dp"-->
+    <!--android:layout_marginStart="16dp" />-->
+    <!--/>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--tools:layout_editor_absoluteY="8dp"-->
+    <!--tools:layout_editor_absoluteX="8dp" />-->
+    <!--<Button-->
+    <!--android:id="@+id/button5"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Set User ID"-->
+    <!--tools:layout_editor_absoluteX="242dp"-->
+    <!--tools:layout_editor_absoluteY="186dp" />-->
+    <!--/>-->
+    <!--</TableLayout>-->
+</android.support.constraint.ConstraintLayout>
